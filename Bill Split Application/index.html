@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill Splitter</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2a3ecd6589.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="box">
+        <h3>Bill Splitter</h3>
+        <p>Cost per person is</p><span id="result"></span>
+
+        <div class="inputbox">
+            <i class="fa fa-usd"></i>
+            <input id="amount" type="number" value="" placeholder="Please enter total amount">
+        </div>
+
+        <div class="inputbox">
+            <i class="fa fa-users"></i>
+            <input id="people" type="number" value="" placeholder="total person">
+
+        </div>
+        <button onclick="return myfun()">Calculate</button>
+
+    </div>
+
+    <script src="script.js"> </script>
+
+</body>
+
+</html>
