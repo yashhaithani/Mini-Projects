@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Earth Image</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="Img\Favicon.png" type="image/x-icon">
+</head>
+<body>
+    <audio id="backgroundMusic" src="death_bed.mp3" loop autoplay></audio>
+    <div class="container">
+        <select id="earthImages" onchange="changeEarthImage()">
+            <option value="Img\Earth1.webp">144p</option>
+            <option value="Img\Earth2.avif">480p</option>
+            <option value="Img\Earth3.jpg">720p</option>
+            <option value="Img\Earth4.jpg">1080p</option>
+            <option value="Img\Love.jpg" id="Love">4K UHD</option>
+        </select>
+        <img id="earthImg" src="Img\Earth1.webp" alt="Earth Image">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
