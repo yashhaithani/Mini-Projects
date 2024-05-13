@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+}
+   
+
+.container {
+    width: 100%;
+    min-height: 100VH;
+    background: linear-gradient(135deg, rgb(191, 17, 17), rgb(182, 4, 182) );
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.todo-app{
+    width: 100%;
+    max-width: 540px;
+    background: #ffffffcb;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
+.todo-app h2{
+    cursor: default;
+    text-align: center;
+    font-size: 35px;
+    text-decoration: underline;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.todo-app h2 img{
+    width: 30px;;
+    margin-left: 10px;
+}
+.task-date {
+    font-size: 14px;
+    color: #888;
+}
+.row{
+    margin-top: 10px;
+    display: flex;
+    align-items:center ;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+input{
+
+    flex: 1;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 10px;
+    font-weight: 14px;
+}
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #e64b39;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+button:hover{
+    cursor: pointer;
+    background-color: #ff5845c8;
+}
+button:active{
+    background-color: #ff4732;
+    border: none;
+}
+/* List */
+ul {
+    padding: 0;
+}
+
+ul li {
+    list-style-type: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 40px; 
+    overflow: hidden;
+    user-select: none;
+    cursor: pointer;
+    position: relative; 
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-image: url(uncheck.png);
+    background-size: cover;
+    background-position: center;
+    top: 9px;
+    left: 8px;
+}
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url(check.png);
+}
+
+/* Delete Button */
+.delete-button {
+    position: absolute;
+    top: -6px;
+    right:-30px;
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+.delete-button:hover{
+    background: none;
+    border: none;
+}
