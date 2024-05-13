@@ -1,1 +1,4 @@
-Some Creative and Usefull apllication created by me for practice
+Some Creative and useful applications created by me for practice
+
+->BILL SPLIT
+->TO-DO List
